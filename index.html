@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="de-CH">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buchhaltung Rustico Tessin</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans p-4 md:p-8">
+    <div class="max-w-5xl mx-auto">
+        
+        <!-- Header -->
+        <header class="mb-8">
+            <h1 class="text-3xl font-bold text-gray-900">Buchhaltung Rustico Tessin</h1>
+            <p class="text-gray-500 mt-2">Aktueller Finanzstand und Saldi</p>
+        </header>
+
+        <!-- KPI Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+            <!-- Katrin -->
+            <div class="bg-white rounded-lg shadow p-6 border-t-4 border-green-500">
+                <h2 class="text-xl font-semibold mb-4">Übersicht Katrin</h2>
+                <div class="flex justify-between mb-2">
+                    <span class="text-gray-600">Total Einzahlungen:</span>
+                    <span class="font-medium">CHF 992.50</span>
+                </div>
+                <div class="flex justify-between mb-2">
+                    <span class="text-gray-600">Total Kosten:</span>
+                    <span class="font-medium">CHF 433.10</span>
+                </div>
+                <div class="flex justify-between mt-4 pt-4 border-t">
+                    <span class="text-gray-900 font-bold">Saldo:</span>
+                    <span class="font-bold text-green-600">CHF 559.40</span>
+                </div>
+            </div>
+
+            <!-- Rebecca -->
+            <div class="bg-white rounded-lg shadow p-6 border-t-4 border-red-500">
+                <h2 class="text-xl font-semibold mb-4">Übersicht Rebecca</h2>
+                <div class="flex justify-between mb-2">
+                    <span class="text-gray-600">Total Einzahlungen:</span>
+                    <span class="font-medium">CHF 250.00</span>
+                </div>
+                <div class="flex justify-between mb-2">
+                    <span class="text-gray-600">Total Kosten:</span>
+                    <span class="font-medium">CHF 433.10</span>
+                </div>
+                <div class="flex justify-between mt-4 pt-4 border-t">
+                    <span class="text-gray-900 font-bold">Saldo:</span>
+                    <span class="font-bold text-red-600">CHF -183.10</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Transaktionen Tabelle -->
+        <div class="bg-white rounded-lg shadow overflow-hidden">
+            <div class="px-6 py-4 border-b">
+                <h3 class="text-lg font-semibold">Alle Bewegungen</h3>
+            </div>
+            <div class="overflow-x-auto">
+                <table class="w-full text-left border-collapse">
+                    <thead>
+                        <tr class="bg-gray-50 text-gray-700 text-sm uppercase">
+                            <th class="px-6 py-3 border-b">Datum</th>
+                            <th class="px-6 py-3 border-b">Buchungstext</th>
+                            <th class="px-6 py-3 border-b">Art</th>
+                            <th class="px-6 py-3 border-b">Betrifft</th>
+                            <th class="px-6 py-3 border-b text-right">Betrag</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-sm">
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-6 py-4 border-b">19.09.2026</td>
+                            <td class="px-6 py-4 border-b">Korkboden</td>
+                            <td class="px-6 py-4 border-b"><span class="px-2 py-1 bg-red-100 text-red-700 rounded text-xs">Rechnung</span></td>
+                            <td class="px-6 py-4 border-b">Alle</td>
+                            <td class="px-6 py-4 border-b text-right font-medium">CHF 354.90</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-6 py-4 border-b">08.10.2026</td>
+                            <td class="px-6 py-4 border-b">Diverses</td>
+                            <td class="px-6 py-4 border-b"><span class="px-2 py-1 bg-red-100 text-red-700 rounded text-xs">Rechnung</span></td>
+                            <td class="px-6 py-4 border-b">Alle</td>
+                            <td class="px-6 py-4 border-b text-right font-medium">CHF 328.25</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-6 py-4 border-b">09.10.2026</td>
+                            <td class="px-6 py-4 border-b">WC-Deckel</td>
+                            <td class="px-6 py-4 border-b"><span class="px-2 py-1 bg-red-100 text-red-700 rounded text-xs">Rechnung</span></td>
+                            <td class="px-6 py-4 border-b">Alle</td>
+                            <td class="px-6 py-4 border-b text-right font-medium">CHF 60.35</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-6 py-4 border-b">18.10.2026</td>
+                            <td class="px-6 py-4 border-b">Saldierung</td>
+                            <td class="px-6 py-4 border-b"><span class="px-2 py-1 bg-green-100 text-green-700 rounded text-xs">Einzahlung</span></td>
+                            <td class="px-6 py-4 border-b">Katrin</td>
+                            <td class="px-6 py-4 border-b text-right font-medium">CHF 742.50</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-6 py-4 border-b">23.10.2026</td>
+                            <td class="px-6 py-4 border-b">Vermietung Berger</td>
+                            <td class="px-6 py-4 border-b"><span class="px-2 py-1 bg-green-100 text-green-700 rounded text-xs">Einzahlung</span></td>
+                            <td class="px-6 py-4 border-b">Alle</td>
+                            <td class="px-6 py-4 border-b text-right font-medium">CHF 500.00</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-6 py-4 border-b">14.11.2026</td>
+                            <td class="px-6 py-4 border-b">Silikonfuge & Gas</td>
+                            <td class="px-6 py-4 border-b"><span class="px-2 py-1 bg-red-100 text-red-700 rounded text-xs">Rechnung</span></td>
+                            <td class="px-6 py-4 border-b">Alle</td>
+                            <td class="px-6 py-4 border-b text-right font-medium">CHF 122.70</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
